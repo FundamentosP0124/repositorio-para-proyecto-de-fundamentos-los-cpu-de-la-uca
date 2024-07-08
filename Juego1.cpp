@@ -12,3 +12,12 @@ int main() {
     jugar();
     return 0;
 }
+
+// Función para dibujar el estado del ahorcado basado en el número de intentos
+void dibujarAhorcado(int intentos) {
+    cout << "Ahorcado: ";
+    for (int i = 0; i < intentos; i++) {
+        cout << "*";
+    }
+    cout << endl;
+}
