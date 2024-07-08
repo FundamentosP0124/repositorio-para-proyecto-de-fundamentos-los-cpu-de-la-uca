@@ -44,3 +44,18 @@ string palabralvldificil() {
 
     return y; // mismo funcionamiento que las anteriore funciones, con la diferencia del cambio de palabras.
 }
+
+
+string palabrah() {
+    string letra[10] = {"responsabilidad", "particularmente", "establecimiento", "correspondiente", "arrepentimiento", "entretenimiento", "experimentacion", "sistematizacion", "fortalecimiento", "definitivamente"};
+    
+    int a;
+    time_t t;
+    t = time(NULL);
+    srand(t);
+    a = rand() % 10; 
+
+    string y = letra[a];
+
+    return y;
+}
