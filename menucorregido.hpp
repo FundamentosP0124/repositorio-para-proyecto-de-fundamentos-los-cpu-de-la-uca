@@ -6,7 +6,7 @@
 #include <algorithm>
 #include <stdlib.h>
 #include <time.h>
-
+// Declarando variables
 using namespace std;
 //Funcion para seleccionar la palabras para el nivel facil.
 string palabralvlfacil() {
