@@ -21,3 +21,16 @@ void dibujarAhorcado(int intentos) {
     }
     cout << endl;
 }
+
+// Función para verificar si una letra está en la palabra y actualizar las letras adivinadas
+bool adivinarLetra(char letra, string& palabra, vector<char>& letrasAdivinadas) {
+    bool encontrada = false;
+    for (char& c : palabra) {
+        if (c == letra) {
+            encontrada = true;
+            letrasAdivinadas.push_back(letra);
+        }
+    }
+    return encontrada;
+}
+
