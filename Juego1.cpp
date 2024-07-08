@@ -34,3 +34,13 @@ bool adivinarLetra(char letra, string& palabra, vector<char>& letrasAdivinadas) 
     return encontrada;
 }
 
+// Función principal del juego
+void jugar() {
+    string palabra;
+    cout << "Ingrese la palabra a adivinar: ";
+    cin >> palabra;
+
+
+
+
+    
