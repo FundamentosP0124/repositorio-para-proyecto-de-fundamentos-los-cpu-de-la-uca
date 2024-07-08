@@ -59,9 +59,32 @@ void jugar() {
             continue;
         }
 
+// Verificar si la letra está en la palabra
+        if (adivinarLetra(letra, palabra, letrasAdivinadas)) {
+            cout << "¡Letra encontrada!" << endl;
+            for (int i = 0; i < palabra.size(); i++) {
+                if (palabra[i] == letra) {
+                    palabraAdivinada[i] = letra;
+                }
+            }
+        } else {
+            cout << "Letra no encontrada." << endl;
+            intentos++;
+            dibujarAhorcado(intentos);
+        }
+
+        // Verificar si la palabra ha sido completamente adivinada
+        if (palabraAdivinada == palabra) {
+            cout << "¡Felicidades! Has ganado." << endl;
+            return;
+        }
+    }
 
 
-        
+
+
+
+
 
 
 
