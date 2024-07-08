@@ -15,7 +15,7 @@ string palabralvlfacil() {
     return y; //retorno de (y) el cual es la palabra seleccionada.
 }
 
-// Funcion para seleccionar la palabras para el nivel medio
+// Funcion para seleccionar la palabras para el nivel medio.
 string palabralvlmedio() {
     string letra[10] = {"llama", "perro", "carro", "mente", "nieve", "cielo", "mundo", "libro", "marea", "estar"};//arreglo de 10 palabras.
 
@@ -27,35 +27,35 @@ string palabralvlmedio() {
 
     string y = letra[a]; //igualar (y) a valor de la posicion del arreglo. 
 
-    return y; //retornar palabra para lvl medio
+    return y; //retornar palabra para lvl medio.
 }
 
-// Funcion de lvl dificil
+// Funcion de lvl dificil.
 string palabralvldificil() {
-    string letra[10] = {"helicoptero", "estructura", "evaluacion", "conclucion", "estructura", "desarrollo", "determinar", "naturaleza", "aprovechar", "establecer"};
+    string letra[10] = {"helicoptero", "estructura", "evaluacion", "conclucion", "estructura", "desarrollo", "determinar", "naturaleza", "aprovechar", "establecer"};//arreglo de 10 palabras.
 
-    int a;
+    int a; 
     time_t t;
     t = time(NULL);
     srand(t);
-    a = rand() % 10; //mismo funcionamiento de seleccionar palabra del 1 al 10
+    a = rand() % 10; //seleccion de un valor entre 1 y 10.
 
-    string y = letra[a];
+    string y = letra[a]; //sustitucion de palabra.
 
-    return y; // mismo funcionamiento que las anteriore funciones, con la diferencia del cambio de palabras.
+    return y; // retorno de la palabra para empezar el lvl.
 }
 
-//funcion de seleccion de palabras para el lvl ultradificil 
-string palabralvlultradificil() {
-    string letra[10] = {"responsabilidad", "particularmente", "establecimiento", "correspondiente", "arrepentimiento", "entretenimiento", "experimentacion", "sistematizacion", "fortalecimiento", "definitivamente"};//arreglo de 10 palabras
+//funcion de seleccion de palabras para el lvl ultradificil.
+string palabralvlultra() {
+    string letra[10] = {"responsabilidad", "particularmente", "establecimiento", "correspondiente", "arrepentimiento", "entretenimiento", "experimentacion", "sistematizacion", "fortalecimiento", "definitivamente"};//arreglo de 10 palabras.
 
     int a;
     time_t t;
     t = time(NULL);
     srand(t);
-    a = rand() % 10; //seleccion de manera aleatoria de un numero del 1 al 10
+    a = rand() % 10; //seleccion de manera aleatoria de un numero del 1 al 10.
 
     string y = letra[a]; //igualacion de letra (y) con la posicion solicitada en el arreglo.
 
-    return y;//retorno de la palabra seleccionada
+    return y;//retorno de la palabra seleccionada.
 }
