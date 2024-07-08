@@ -14,3 +14,16 @@ string palabralvlfacil() {
     return y;
 } //Seleccion aleatoria de palabras 
 
+string palabram() {
+    string letra[10] = {"llama", "perro", "carro", "mente", "nieve", "cielo", "mundo", "libro", "marea", "estar"};
+    int a;
+    time_t t;
+    t = time(NULL);
+    srand(t);
+    a = rand() % 10; 
+
+    string y = letra[a];
+
+    return y;
+}
+
