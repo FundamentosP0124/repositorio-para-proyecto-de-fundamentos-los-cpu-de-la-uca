@@ -15,17 +15,18 @@ string palabralvlfacil() {
     return y; //retorno de (y) el cual es la palabra seleccionada.
 }
 
+// Funcion para seleccionar la palabras para el nivel medio
 string palabralvlmedio() {
-    string letra[10] = {"llama", "perro", "carro", "mente", "nieve", "cielo", "mundo", "libro", "marea", "estar"};
+    string letra[10] = {"llama", "perro", "carro", "mente", "nieve", "cielo", "mundo", "libro", "marea", "estar"};//arreglo de 10 palabras.
 
     int a;
     time_t t;
     t = time(NULL);
     srand(t);
-    a = rand() % 10; 
+    a = rand() % 10; //misma funcion de selecionar una palabra aleaotrioa del 1 al 10.
 
-    string y = letra[a];
+    string y = letra[a]; //igualar (y) a valor de la posicion del arreglo. 
 
-    return y;
+    return y; //retornar palabra para lvl medio
 }
 
