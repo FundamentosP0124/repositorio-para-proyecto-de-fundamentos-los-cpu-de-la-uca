@@ -30,3 +30,16 @@ string palabralvlmedio() {
     return y; //retornar palabra para lvl medio
 }
 
+
+string palabrad() {
+    string letra[10] = {"helicoptero", "estructura", "evaluacion", "conclucion", "estructura", "desarrollo", "determinar", "naturaleza", "aprovechar", "establecer"};
+    int a;
+    time_t t;
+    t = time(NULL);
+    srand(t);
+    a = rand() % 10; 
+
+    string y = letra[a];
+
+    return y;
+}
