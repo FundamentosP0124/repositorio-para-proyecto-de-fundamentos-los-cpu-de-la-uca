@@ -40,7 +40,17 @@ void jugar() {
     cout << "Ingrese la palabra a adivinar: ";
     cin >> palabra;
 
+// Inicializar la palabra adivinada con guiones bajos
+    string palabraAdivinada = string(palabra.size(), '_');
+    vector<char> letrasAdivinadas;
+
+    int intentos = 0;
+    while (intentos < MAX_INTENTOS) {
+        cout << "Palabra a adivinar: " << palabraAdivinada << endl;
+        cout << "Intentos restantes: " << MAX_INTENTOS - intentos << endl;
+        cout << "Ingrese una letra: ";
+        char letra;
+        cin >> letra;
 
 
 
-    
