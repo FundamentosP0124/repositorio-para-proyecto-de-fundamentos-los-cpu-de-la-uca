@@ -51,6 +51,12 @@ void jugar() {
         cout << "Ingrese una letra: ";
         char letra;
         cin >> letra;
+        letra = tolower(letra); // Convertir a minúscula
+
+
+
+
+        
 
 
 
