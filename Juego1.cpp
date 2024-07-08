@@ -80,6 +80,10 @@ void jugar() {
         }
     }
 
+// Mensaje de derrota
+    cout << "¡Lo siento! Has perdido. La palabra era: " << palabra << endl;
+}
+
 
 
 
