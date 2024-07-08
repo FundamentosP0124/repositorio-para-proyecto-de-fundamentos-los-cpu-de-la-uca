@@ -53,10 +53,19 @@ void jugar() {
         cin >> letra;
         letra = tolower(letra); // Convertir a minúscula
 
+// Verificar si la letra ya fue ingresada anteriormente
+        if (find(letrasAdivinadas.begin(), letrasAdivinadas.end(), letra) != letrasAdivinadas.end()) {
+            cout << "Letra ya ingresada anteriormente. Intente con otra." << endl;
+            continue;
+        }
 
 
 
         
+
+
+
+
 
 
 
