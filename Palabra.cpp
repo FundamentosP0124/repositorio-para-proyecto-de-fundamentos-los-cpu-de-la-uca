@@ -30,16 +30,17 @@ string palabralvlmedio() {
     return y; //retornar palabra para lvl medio
 }
 
-
-string palabrad() {
+// Funcion de lvl dificil
+string palabralvldificil() {
     string letra[10] = {"helicoptero", "estructura", "evaluacion", "conclucion", "estructura", "desarrollo", "determinar", "naturaleza", "aprovechar", "establecer"};
+
     int a;
     time_t t;
     t = time(NULL);
     srand(t);
-    a = rand() % 10; 
+    a = rand() % 10; //mismo funcionamiento de seleccionar palabra del 1 al 10
 
     string y = letra[a];
 
-    return y;
+    return y; // mismo funcionamiento que las anteriore funciones, con la diferencia del cambio de palabras.
 }
