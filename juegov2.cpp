@@ -109,9 +109,9 @@ int main() {
     
     do {
         cout << "\nBienvenidos al juego del ahorcado " << nickname << ". Selecciona la dificultad. Si necesitas ayuda para comprender el juego, aquí te va una pequeña ayuda de qué va la cosa" << endl;
-        cout << "El juego funciona de la siguiente manera: tendrás un repertorio de palabras, esa palabra se seleccionara de manera aleatoria. Tu labor es ingresar letras y adivinar la palabra. Tendras 6 oportunidades. Si las fallas, se acaba el juego. Se te ira avisando si acertaste o fallaste. Suerte y espero que disfrutes del juego." << endl; 
+        cout << "El juego funciona de la siguiente manera: tendrás un repertorio de palabras, esa palabra se seleccionara de manera aleatoria. Tu labor es ingresar letras y adivinar la palabra. Inicia ingresando letras, tendras 6 oportunidades para advinarl la palabra. Si las fallas las 6 oportunidades, se acaba el juego. Se te ira avisando si acertaste o fallaste, para que al final revelar la palabra. Suerte y espero que disfrutes del juego "<< nickname << endl; 
         cout << "Continuando al juego..." << endl;
-        cout << "\n\t1. Facil \n\t2. Medio \n\t3. Dificil \n\t4. Hardcore \n\tPresiona otro numero para salir" << endl; 
+        cout << "\n\t1. Facil \n\t2. Medio \n\t3. Dificil \n\t4. Hardcore \n\t 5. Echa un ojo a los creditos de este juego, gracias por jugar. \n\t 6. Si necesitas ayuda presiona el 6.  \n\tPresiona otro numero para salir" << endl; 
         cin >> opc; 
         
         string palabra;
@@ -141,6 +141,8 @@ int main() {
                 break;
             case 5:
             cout << "Los creadores de este juego han sido Cesar Chiquillo(00225424), Rodrigo Escobar(00093924) y Fabrizzio Arevalo(00100224)" << endl; 
+            case 6:
+            cout << "Si se te complica, empieza por usar vocales \n No te apresures, tomate tu tiempo, aqui no hay limite de tiempo, toma el que sea necesario. \n Ingresar varias letras en una misma opcion no te ayudara, solo perderas intentos. \n Las palabras no tienen caracteres especiales, asi que no es necesario ingresar dichos caracteres. \n Las palabras no contienen mayusculas, asi que no es necesario ingresarlas. "<< endl; 
             default:
                 cout << "Opcion no valida" << endl;
                 break;
@@ -148,5 +150,6 @@ int main() {
     } while (opc != 0);
     
     cout << "Espero que te haya gustado el juego, " << nickname << ". ¡Pasa feliz dia!" << endl;
+    cout << "Jugador inscrito: " << nickname << endl; 
     return 0;
 }
