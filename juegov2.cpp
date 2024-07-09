@@ -109,15 +109,15 @@ int main() {
     
     do {
         cout << "\nBienvenidos al juego del ahorcado " << nickname << ". Selecciona la dificultad. Si necesitas ayuda para comprender el juego, aquí te va una pequeña ayuda de qué va la cosa" << endl;
-        cout << "El juego funciona de la siguiente manera: tendrás un repertorio de palabras, esa palabra se seleccionará de manera aleatoria. Tu labor es ingresar letras y adivinar la palabra. Tendrás 6 oportunidades. Si las fallas, se acaba el juego. Se te irá avisando si acertaste o fallaste. Suerte y espero que disfrutes del juego." << endl; 
+        cout << "El juego funciona de la siguiente manera: tendrás un repertorio de palabras, esa palabra se seleccionara de manera aleatoria. Tu labor es ingresar letras y adivinar la palabra. Tendras 6 oportunidades. Si las fallas, se acaba el juego. Se te ira avisando si acertaste o fallaste. Suerte y espero que disfrutes del juego." << endl; 
         cout << "Continuando al juego..." << endl;
-        cout << "\n\t1. Fácil \n\t2. Medio \n\t3. Difícil \n\t4. Hardcore \n\tPresiona otro número para salir" << endl; 
+        cout << "\n\t1. Facil \n\t2. Medio \n\t3. Dificil \n\t4. Hardcore \n\tPresiona otro numero para salir" << endl; 
         cin >> opc; 
         
         string palabra;
         switch (opc) {
             case 1:
-                cout << "Has seleccionado la dificultad fácil" << endl;
+                cout << "Has seleccionado la dificultad facil" << endl;
                 palabra = palabralvlfacil();
                 jugar(palabra);
                 break; 
@@ -127,7 +127,7 @@ int main() {
                 jugar(palabra);
                 break;
             case 3:
-                cout << "Has seleccionado la dificultad difícil" << endl;
+                cout << "Has seleccionado la dificultad dificil" << endl;
                 palabra = palabralvldificil();
                 jugar(palabra);
                 break;
@@ -139,12 +139,14 @@ int main() {
             case 0:
                 cout << "Has seleccionado la opción de salir" << endl;
                 break;
+            case 5:
+            cout << "Los creadores de este juego han sido Cesar Chiquillo(00225424), Rodrigo Escobar(00093924) y Fabrizzio Arevalo(00100224)" << endl; 
             default:
-                cout << "Opción no válida" << endl;
+                cout << "Opcion no valida" << endl;
                 break;
         }
     } while (opc != 0);
     
-    cout << "Espero que te haya gustado el juego, " << nickname << ". ¡Pasa feliz día!" << endl;
+    cout << "Espero que te haya gustado el juego, " << nickname << ". ¡Pasa feliz dia!" << endl;
     return 0;
 }
