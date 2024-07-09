@@ -1,4 +1,9 @@
-#include <ideamen.hpp>
+#include <iostream>
+#include <string>
+#include <vector>
+#include <ctime>
+#include <cctype>
+#include <algorithm>
 
 // Constantes
 const int MAX_INTENTOS = 6;
@@ -83,15 +88,3 @@ void jugar() {
     // Mensaje de derrota
     std::cout << "¡Lo siento! Has perdido. La palabra era: " << palabra << std::endl;
 }
-
-
-
-
-
-
-
-
-
-
-
-
